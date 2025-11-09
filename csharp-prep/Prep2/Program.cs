@@ -29,15 +29,11 @@ class Program
             letter = "F";
         }
 
-
-        // Display letter grade.
-        Console.WriteLine($"Your letter grade is: {letter}");
-
-        // End message of course completion result.
+        // End message of course completion result with letter grade.
         if (grade_percentage >= 70)
         {
-            Console.WriteLine("Congratulations! You have passed the course!");
+            Console.WriteLine($"You have earned the letter grade of: {letter}. Congratulations! You have passed the course!");
         }
-        else Console.WriteLine("Unfortunately, you have failed the course. You can do better next time!");
+        else Console.WriteLine($"You have earned the letter grade of: {letter}. Unfortunately, you have failed the course. You can do better next time!");
     }
 }

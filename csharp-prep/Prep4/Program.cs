@@ -25,6 +25,22 @@ class Program
         {
             sum = sum + number;
         }
-        Console.WriteLine($"Sum: {sum}");
+        Console.WriteLine($"The sum is: {sum}");
+
+        // Average of numbers.
+        float count_of_numbers = numbers.Count;
+        float average = sum / count_of_numbers;
+        Console.WriteLine($"The average is: {average}");
+
+        // Largest number.
+        int largest_number = 0;
+        foreach (int number in numbers)
+        {
+            if (number > largest_number)
+            {
+                largest_number = number;
+            }
+        }
+        Console.WriteLine($"The largest number is: {largest_number}");
     }
 }
